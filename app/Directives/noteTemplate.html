@@ -1,0 +1,10 @@
+<div id='{{$index}}'>
+    <div ng-mousedown="drag($index)" class="note effect" ng-hide="i.done">
+        <button ng-click="createNewNote()" type="button" class="plusBtn"><span aria-hidden="true">&plus;</span></button>
+        <span ng-click="changeColor(i.id)" class="icon icon-brush colorOfNote" aria-hidden="true"></span>
+        <button ng-click="deleteNote(i.id)" type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <p class="noteHeader">Note # {{i.id}}</p>
+        <p><textarea cols="27" rows="5" ng-model="i.text"></textarea></p>
+        <div class="doneCheckbox"><input type="checkbox" ng-disabled="i.text == '' || i.text == undefined " ng-model="i.done" ng-click="noteIsDone(i.id, i.done)"> Done</div>
+    </div>
+</div>

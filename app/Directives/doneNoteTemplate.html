@@ -1,0 +1,8 @@
+<div id='{{$index + 1000}}'>
+    <div ng-mousedown="drag($index + 1000)" class="note noteIsDone effect" ng-show="j.done">
+        <button ng-click="deleteDoneNote(j.id)" type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <p class="noteHeader"><s>Note # {{j.id}}</s></p>
+        <div class="textInDoneNote"><s>{{j.text}}</s></div>
+        <div class="doneCheckbox"><input type="checkbox" ng-model="j.done" ng-click="noteIsNotDoneAgain(j.id, j.done)"> Done</div>
+    </div>
+</div>

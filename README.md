@@ -1,0 +1,1 @@
+A simple Application for creating sticky notes (reminders, tasks), you can edit, delete, change the color of the note, move notes to any part of the screen and mark a note (reminder, task) as done

@@ -1,0 +1,242 @@
+body, html {
+  margin-top: 27px;
+  position: relative;
+  background: url("images/light-incline1.png") repeat;
+  z-index: -10;
+}
+
+div.wrapper {
+  background-color: transparent;
+  width: 335px;
+  height: 325px;
+  display: inline-block;
+}
+
+.mainContainer {
+  min-width: 1000px;
+  width: 75%;
+  margin: auto;
+  margin-bottom: 80px;
+}
+
+#main div.note {
+  cursor: move;
+  font-family: 'Kalam', cursive;
+  color: dimgray;
+  font-size: 23px;
+  width: 305px;
+  height: 305px;
+  margin: 20px;
+  padding: 0 0 10px 0;
+  float: left;
+  display: block;
+  position:relative;
+}
+
+#main div.note textarea {
+  color: rgb(50,50,50);
+  resize: none;
+  padding: 9px;
+  font-family: 'Bad Script', cursive;
+  font-size: 25px;
+  outline: none;
+  border: none;
+  margin-left: 11px;
+  max-width: 278px;
+  max-height: 193px;
+}
+
+#main div.note .doneCheckbox {
+  float: right;
+  padding: 7px 9px 7px 0;
+}
+
+#main div.note input {
+  width: 25px;
+  height: 25px;
+  border: 1px solid rgba(185, 193, 199, 0.5);
+  cursor: pointer;
+  vertical-align: bottom;
+  margin-bottom: 7px;
+}
+
+p.noteHeader {
+  padding: 7px;
+  margin-bottom: 0;
+}
+
+.pinkNote div.note textarea, .pinkNote div.note {
+  background-color: #FFC8D4;
+}
+
+.pinkNote div.note {
+  box-shadow: 0 -11px 37px -19px #B37E8C inset;
+}
+
+.pinkNote div.note p.noteHeader {
+  background-color: #FBC4D2;
+  box-shadow: 0 0 14px -7px #FBB0C2 inset;
+}
+
+.blueNote div.note textarea, .blueNote div.note {
+  background-color: #C6C5FF;
+}
+
+.blueNote div.note {
+  box-shadow: 0 -11px 37px -19px #a1a1a5 inset;
+}
+
+.blueNote div.note p.noteHeader {
+  background-color: #c0c0ff;
+  box-shadow: 0 0 14px -7px #AEBCCD inset;
+}
+
+.greenNote div.note textarea, .greenNote div.note {
+  background-color: #CAFFA8;
+}
+
+.greenNote div.note {
+  box-shadow: 0 -11px 37px -19px #87a076 inset;
+}
+
+.greenNote div.note p.noteHeader {
+  background-color: #c6fba4;
+  box-shadow: 0 0 14px -7px #9CDF7F inset;
+}
+
+.yellowNote div.note textarea, .yellowNote div.note {
+  background-color: #FFFFA2;
+}
+
+.yellowNote div.note {
+  box-shadow: 0 -11px 37px -19px #afaf87 inset;
+}
+
+.yellowNote div.note p.noteHeader {
+  background-color: #f9f9a0;
+  box-shadow: 0 0 14px -7px #f0f0a0 inset;
+}
+
+#main div.note.noteIsDone, #main div.note.noteIsDone textarea {
+  background-color: #F5F5F5;
+}
+
+#main div.note.noteIsDone p.noteHeader {
+  background-color: #F5F5F5;
+  box-shadow: 0 0 100px -52px #919191 inset;
+}
+
+#main div.note.noteIsDone {
+  box-shadow: 0 0 100px -43px #919191 inset;
+}
+
+#main .textInDoneNote {
+  width: 278px;
+  height: 215px;
+  padding: 9px;
+  font-family: 'Bad Script', cursive;
+  font-size: 25px;
+  word-wrap: break-word;
+  overflow-y: auto;
+  margin-left: 11px;
+}
+
+#main button.close{
+  color: red;
+  font-size: 27px;
+  outline: none;
+  position: relative;
+  top: 7px;
+  right: 10px;
+  width: 24px;
+  text-shadow: -2px 2px 0 #fff;
+  opacity: .5;
+}
+
+#main button.close:hover {
+  opacity: .70;
+}
+
+#main button.close:active {
+  color: #ce3939;
+  opacity: .9;
+}
+
+#main span.colorOfNote {
+  position: absolute;
+  font-size: 17px;
+  cursor: pointer;
+  text-shadow: -2px 2px 0 #fff;
+  opacity: .6;
+  top: 8px;
+  right: 33px;
+}
+
+#main button.plusBtn {
+  position: absolute;
+  color: #2e6da4;
+  top: 5px;
+  right: 56px;
+  font-size: 27px;
+  outline: none;
+  text-shadow: -2px 2px 0 #fff;
+  opacity: .5;
+  cursor: pointer;
+  font-weight: 700;
+  line-height: 1;
+  background: transparent;
+  border: none;
+}
+
+#main button.plusBtn:hover {
+  opacity: .85;
+}
+
+#main button.plusBtn:active {
+  opacity: 1;
+}
+
+#main span.colorOfNote:hover, #main span.colorOfNote:active {
+  color: dimgray;
+  opacity: .9;
+}
+
+#main span.colorOfNote:active {
+  opacity: 1;
+}
+
+#main .effect {
+  position: relative;
+}
+
+#main .effect:before, #main .effect:after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 13px #777;
+  -moz-box-shadow: 0 15px 13px #777;
+  box-shadow: 0 15px 13px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+
+#main .effect:after {
+  right: 10px;
+  left: auto;
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+}
+
+
